@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Practica1 - Captura y visualización de datos MQTT
 
 Este repositorio permite:
@@ -122,3 +123,6 @@ Revisar el archivo `LICENSE`.
 ## Herramientas externas empleadas
 - [Regexr](https://regexr.com/)
 Generacion y examinacion de regex.
+=======
+# Practicas_SO_2025_26
+>>>>>>> eeae0e2ea09378d507036bb948ac1052d5b49f17
