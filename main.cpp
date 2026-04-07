@@ -15,11 +15,11 @@ int main() {
     // apertura del archivo de datos
     ifstream archivo_entrada("datos_pinza.txt");
     if (!archivo_entrada.is_open()) {
-        cout << "Error: No se pudo abrir datos_pinza.txt" << endl;
+        cout << "Error: no se pudo abrir el archivo" << endl;
         return 1;
     }
 
-    cout << "Iniciando el procesamiento de datos..." << endl;
+    cout << "Iniciando el procesamiento de datos" << endl;
 
     int n = 0;
     // Lectura de los primeros 100 registros
@@ -64,8 +64,8 @@ int main() {
 
     archivo_salida.close();
 
-    // Mensaje final de confirmacion
-    cout << "Procesamiento completado. Resultados guardados en 'resultado_pinza.txt'." << endl;
+    
+    cout << "Resultados guardados en 'resultado_pinza.txt'." << endl;
 
     return 0;
 }
