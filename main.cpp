@@ -30,6 +30,11 @@ int main() {
         n++;
     }
     archivo_entrada.close();
+    // Verificamos que se hayan leído algún dato.
+    if (n == 0) {
+    cout << "Error: no se leyeron datos validos" << endl;
+    return 1;
+    }
 
     // Procesamiento y calculo de estabilidad
     float suma_galga = 0, suma_izq = 0, suma_der = 0;
