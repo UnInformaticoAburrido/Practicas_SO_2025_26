@@ -21,7 +21,7 @@ int main() {
         return 1;
     }else{
         //escritura del encabezado
-        archivo_salida << "ID      GALGA    IZQ    DER     ESTADO" << endl;
+        archivo_salida << "RESULTADOS DEL SISTEMA DE PINZA ROBOTICA" << endl;
         while (true)
         {
             // Definicion de variables y matrices 
@@ -37,9 +37,14 @@ int main() {
                 fuerza_der[registrosLeidos] = datos[registrosLeidos][2];
                 registrosLeidos++;
             }
-            if (registrosLeidos < 100 && archivo_entrada.eof()) {
-                cout << "Alerta: no se leyeron datos validos de L:" << registrosLeidos << "en el bloque " << contador_total_registros/100 << endl;
-            }
+            if (registrosLeidos < 100) {
+                if (!archivo_entrada.eof())
+                {
+                    cout << "Error: se produjo un error al leer el archivo" << endl;
+                    return 1;
+                } else {
+                    cout << "Alerta: no se leyeron datos validos de L-" << registrosLeidos << "-bloque-" << contador_total_registros/100 << endl;
+                }
             // Procesamiento y calculo de estabilidad
             float suma_galga = 0, suma_izq = 0, suma_der = 0;
             for (int i = 0; i < registrosLeidos; i++) {
