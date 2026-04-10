@@ -75,7 +75,6 @@ int main() {
             }
             if (registrosLeidos != 100) {
                 //Comnprobamos si se han leido registros alamenos una vez.
-                
                 if (contador_total_registros == 0) {
                     if (archivo_entrada.eof()) {
                         cout << "Error: el archivo esta vacio o no contiene datos validos" << endl;
