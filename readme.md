@@ -16,7 +16,6 @@ El repositorio contiene los siguientes archivos:
 * `datos_pinza.txt` → Archivo de entrada con los datos de sensores
 * `resultado_pinza.txt` → Archivo generado con los resultados del análisis
 * `script.sh` → Script Bash para ejecutar el programa automáticamente
-* `README.md` → Documento de instrucciones del proyecto
 * `informe.pdf` → Informe explicativo de la práctica
 
 ---
