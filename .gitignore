@@ -1,0 +1,33 @@
+# Build artifacts
+*.exe
+*.out
+*.o
+*.obj
+*.ilk
+*.pdb
+*.lib
+*.dll
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs and temporary run files
+*.log
+*.pid
+*.id
+
+# Editor and OS files
+.vscode/
+.idea/
+.vs/
+*.suo
+*.user
+*.tmp
+Thumbs.db
+Desktop.ini
+
+# Keep generated images
+!salida/
+!salida/*.png
