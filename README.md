@@ -80,23 +80,9 @@ Si la matriz recibida es valida, genera una imagen PNG llamada:
 capture_{id}.png
 ```
 
-## Estructura de Archivos
-
-- `main.cpp`: programa principal del cliente C++.
-- `libreria.h`: constantes de configuracion y declaraciones de funciones.
-- `libreria.cpp`: lectura JSON, validacion, interpolacion y envio HTTP.
-- `servidor.py`: servidor Flask y generacion de imagenes.
-- `config_servidor.json`: configuracion del host, puerto y carpeta de salida.
-- `tactile_captures_50.json`: datos tactiles de entrada.
-- `requirements.txt`: dependencias de Python.
-- `nlohmann/json.hpp`: cabecera local de JSON for Modern C++.
-- `salida/`: imagenes PNG generadas.
-
 ## Dependencias
 
 ### C++
-
-- Compilador compatible con C++17.
 - JSON for Modern C++ (`nlohmann/json`).
 - `libcurl` para realizar peticiones HTTP POST.
 
